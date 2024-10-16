@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Result</title>
+</head>
+<body>
+    <h1>BMI Result for {{ name }}</h1>
+
+    <p>Your BMI is: <strong>{{ bmi }}</strong></p>
+    <p>Category: <strong>{{ category }}</strong></p>
+
+    <p>Suggested weight range for your height:</p>
+    <p>Minimum: <strong>{{ suggested_min }} kg</strong></p>
+    <p>Maximum: <strong>{{ suggested_max }} kg</strong></p>
+
+    <a href="{{ url_for('index') }}">Go back</a>
+</body>
+</html>
